@@ -48,24 +48,7 @@ AMLS_24_25_SNXXXXXX/
 
 This project can be set up using two different approaches to manage dependencies and environment:
 
-### 1. Poetry Environment (Recommend👍)
-
-The preferred way to set up the project is by using [Poetry](https://python-poetry.org/), which simplifies dependency management and package installation.
-
-To get started with Poetry, run:
-
-```sh
-# Install Poetry if not already installed
-pip install poetry
-
-# Install dependencies
-poetry install
-
-# Activate the virtual environment
-poetry shell
-```
-
-### 2. Conda Environment with Requirements File
+### Conda Environment with Requirements File
 
 Alternatively, you can use Conda to create a virtual environment and install packages from an `environment.yml` file.
 
@@ -76,33 +59,14 @@ To get started with Conda, run:
 sudo conda env create -f env/environment.yml
 
 # Activate the environment
-conda activate AMLS_Env
+conda activate AMLS_Project
 ```
 
 The `environment.yml` file is configured to include the dependencies listed in `requirements.txt`, and create an virtual conda environment called `AMLS_Env`.
 
 ## Required Packages
 
-- `numpy`
-- `scipy`
-- `pandas`
-- `scikit-learn`
-- `tensorflow`
-- `matplotlib`
-- `ruff` (for linting)
-- `pylint` (as kernel to align with PEP8 standards)
-
-## Code Standards
-
-To maintain code quality and consistency, the project uses `ruff` for linting, with `pylint` integrated as a plugin to ensure compliance with PEP8 standards.
-
-To run lint checks:
-
-```sh
-# Run ruff checks
-ruff .
-
-```
+see env/requirements.txt
 
 ## Running the Project
 
