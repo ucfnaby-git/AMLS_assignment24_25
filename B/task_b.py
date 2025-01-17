@@ -235,6 +235,7 @@ class Net(nn.Module):
         x = self.fc(x)
         return x
 
+    # Testing
     # def forward(self, x):
     #     print(f"Input size: {x.size()}")  # Print input size
     #     x = self.layer1(x)
